@@ -1,7 +1,7 @@
 package io.jmeetup.group.domain;
 
 import io.jmeetup.group.domain.ports.incoming.GroupRepository;
-import io.jmeetup.group.domain.ports.outgoing.api.CreateGroup;
+import io.jmeetup.group.domain.ports.outgoing.api.NewGroup;
 import io.jmeetup.group.domain.ports.outgoing.api.CreatedGroup;
 
 public class GroupApi {
@@ -11,7 +11,7 @@ public class GroupApi {
         this.groupRepository = groupRepository;
     }
 
-    CreatedGroup createGroup(CreateGroup request) {
+    public CreatedGroup create(NewGroup request) {
         return null;
     }
 }
