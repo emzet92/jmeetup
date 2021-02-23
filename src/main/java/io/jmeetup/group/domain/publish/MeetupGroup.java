@@ -5,7 +5,7 @@ import lombok.Value;
 
 @Builder
 @Value
-public class GroupSnapshot {
-    private final GroupId groupId;
-    private final GroupName groupName;
+public class MeetupGroup {
+    GroupId groupId;
+    GroupName groupName;
 }

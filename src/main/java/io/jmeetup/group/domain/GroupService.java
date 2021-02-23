@@ -20,7 +20,7 @@ class GroupService {
             return Failure.emptyMessage();
         }
 
-        groupRepository.save(Group.from(request).toSnapshot());
+        groupRepository.save(MeetupGroup.from(request).toSnapshot());
         return Success.emptyMessage();
     }
 }

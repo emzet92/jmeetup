@@ -1,21 +1,20 @@
 package io.jmeetup.group.domain;
 
-import io.jmeetup.group.domain.publish.GroupSnapshot;
 import io.jmeetup.group.domain.publish.NewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Group {
+class MeetupGroup {
     private final GroupId groupId;
     private final GroupName groupName;
     private final List<GroupMember> groupMembers = new ArrayList<>();
 
-    static Group from(NewGroup request) {
-        return new Group(GroupId.create(), GroupName.from(request));
+    static MeetupGroup from(NewGroup request) {
+        return new MeetupGroup(GroupId.create(), GroupName.from(request));
     }
 
-    Group(GroupId groupId, GroupName groupName) {
+    MeetupGroup(GroupId groupId, GroupName groupName) {
         this.groupId = groupId;
         this.groupName = groupName;
     }
@@ -24,8 +23,8 @@ class Group {
 
     }
 
-    public GroupSnapshot toSnapshot(){
-        return GroupSnapshot.builder()
+    public io.jmeetup.group.domain.publish.MeetupGroup toSnapshot(){
+        return io.jmeetup.group.domain.publish.MeetupGroup.builder()
                 .groupId(groupId)
                 .groupName(groupName)
                 .build();
