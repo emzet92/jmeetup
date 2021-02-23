@@ -6,7 +6,7 @@ import io.jmeetup.group.domain.publish.NewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group {
+class Group {
     private final GroupId groupId;
     private final GroupName groupName;
     private final List<GroupMember> groupMembers = new ArrayList<>();
