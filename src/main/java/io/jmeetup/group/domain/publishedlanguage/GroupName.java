@@ -1,10 +1,9 @@
-package io.jmeetup.group.domain;
+package io.jmeetup.group.domain.publishedlanguage;
 
-import io.jmeetup.group.domain.publish.NewGroup;
 import lombok.Value;
 
 @Value(staticConstructor = "of")
-class GroupName implements io.jmeetup.group.domain.publish.GroupName {
+public class GroupName {
     private final String groupName;
 
     public static GroupName from(NewGroup newGroup) {

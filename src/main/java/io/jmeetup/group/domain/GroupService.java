@@ -1,10 +1,11 @@
 package io.jmeetup.group.domain;
 
-import io.jmeetup.group.domain.publish.GroupResult;
-import io.jmeetup.group.domain.publish.NewGroup;
+import io.jmeetup.group.domain.publishedlanguage.GroupName;
+import io.jmeetup.group.domain.publishedlanguage.GroupResult;
+import io.jmeetup.group.domain.publishedlanguage.NewGroup;
 import io.jmeetup.group.domain.requires.GroupRepository;
 
-import static io.jmeetup.group.domain.publish.GroupResult.*;
+import static io.jmeetup.group.domain.publishedlanguage.GroupResult.*;
 
 class GroupService {
     private final GroupRepository groupRepository;

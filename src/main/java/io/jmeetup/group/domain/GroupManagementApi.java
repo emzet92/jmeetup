@@ -1,8 +1,8 @@
 package io.jmeetup.group.domain;
 
-import io.jmeetup.group.domain.publish.NewGroup;
-import io.jmeetup.group.domain.publish.GroupResult;
-import io.jmeetup.group.domain.publish.NewMember;
+import io.jmeetup.group.domain.publishedlanguage.NewGroup;
+import io.jmeetup.group.domain.publishedlanguage.GroupResult;
+import io.jmeetup.group.domain.publishedlanguage.NewMember;
 
 public class GroupManagementApi {
     private final GroupService groupService;

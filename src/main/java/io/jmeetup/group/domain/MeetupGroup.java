@@ -1,6 +1,9 @@
 package io.jmeetup.group.domain;
 
-import io.jmeetup.group.domain.publish.NewGroup;
+import io.jmeetup.group.domain.publishedlanguage.GroupId;
+import io.jmeetup.group.domain.publishedlanguage.GroupName;
+import io.jmeetup.group.domain.publishedlanguage.MeetupGroupSnapshot;
+import io.jmeetup.group.domain.publishedlanguage.NewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +26,10 @@ class MeetupGroup {
 
     }
 
-    public io.jmeetup.group.domain.publish.MeetupGroup toSnapshot(){
-        return io.jmeetup.group.domain.publish.MeetupGroup.builder()
-                .groupId(groupId)
-                .groupName(groupName)
+    public MeetupGroupSnapshot toSnapshot(){
+        return MeetupGroupSnapshot.builder()
+                .groupId(groupId.getId())
+                .groupName(groupName.getGroupName())
                 .build();
     }
 }

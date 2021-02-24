@@ -1,4 +1,4 @@
-package io.jmeetup.group.domain.publish;
+package io.jmeetup.group.domain.publishedlanguage;
 
 import lombok.Value;
 
